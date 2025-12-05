@@ -1,0 +1,17 @@
+SELECT * FROM `books`;
+
+SELECT DISTINCT genre 
+FROM books;
+
+SELECT * FROM books 
+WHERE stock_status='in stock' AND price<'400';
+
+SELECT * FROM books
+WHERE stock_status='out of stock' OR price>'700';
+
+SELECT title,price * 10/100 AS price_with_gst
+FROM books;
+
+SELECT title,price,stock_status
+ FROM books 
+ ORDER BY price DESC;
