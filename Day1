@@ -2,3 +2,6 @@ SELECT * FROM `students`;
 
 SELECT * FROM students 
 WHERE age>20;
+
+SELECT * FROM students 
+WHERE department='computer science'OR 'physics';
