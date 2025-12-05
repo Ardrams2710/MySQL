@@ -8,3 +8,6 @@ WHERE department='computer science'OR 'physics';
 
 SELECT * FROM students 
 WHERE grade='90';
+
+SELECT * FROM students
+ WHERE grade BETWEEN '70' AND '90';
