@@ -1,0 +1,8 @@
+SELECT * FROM `bookstable`;
+
+SELECT * FROM bookstable 
+WHERE genre='history'OR'fiction'OR 'science';
+
+SELECT * FROM bookstable WHERE title ='The great gatsby';
+
+SELECT * FROM `bookstable` WHERE title ='Dan Brown';
