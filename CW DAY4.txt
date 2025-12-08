@@ -1,0 +1,12 @@
+SELECT * FROM `bookss`;
+
+UPDATE bookss
+SET price=price+50,stock=12
+WHERE title='Learn SQL';
+
+UPDATE bookss
+SET stock=stock-2 
+WHERE price>500;
+
+DELETE FROM bookss 
+WHERE book_id=3;
