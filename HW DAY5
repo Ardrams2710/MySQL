@@ -1,0 +1,29 @@
+SELECT * FROM `bookks`;
+
+INSERT INTO `bookks` 
+VALUES('1','The Alchemist','Paulo Coelho','350','50'),
+('2','Atomic Habits','James Clear','450','40'), 
+('3','The Psychology of Money','Morgan Housel','400','30'), 
+('4','Lkigai','Francess Miralles','300','60'),
+('5','Deep Work','Cal Newport','500','20');
+
+SELECT * FROM `bookks` 
+WHERE price<'450'AND stock>'30';
+
+UPDATE `bookks` 
+SET stock='45',price='420' 
+WHERE title='Deep Work';
+
+DELETE FROM `bookks`
+WHERE title='Lkigai';
+
+SELECT AVG (price) AS average_price,
+COUNT(*)AS total_books 
+FROM bookks;
+
+SELECT * FROM `bookks` 
+ORDER BY price DESC 
+LIMIT 3;
+
+
+
