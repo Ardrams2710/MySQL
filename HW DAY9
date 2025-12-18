@@ -1,0 +1,30 @@
+SELECT * FROM `employees`;
+
+INSERT INTO employees VALUES('1','Anjali'), 
+('2','Rohan'), 
+('3','Meena');
+
+SELECT * FROM `departments`;
+
+INSERT INTO departments VALUES('1','HR'), 
+('2','IT'), 
+('3','FINANCE');
+
+SELECT e.name, d.department_name 
+FROM employees e 
+LEFT JOIN departments d 
+ON e.id=d.emp_id;
+
+SELECT e.name, d.department_name 
+FROM employees e 
+INNER JOIN departments d 
+ON e.id=d.emp_id;
+
+SELECT e.name, d.department_name 
+FROM employees e 
+RIGHT JOIN departments d 
+ON e.id=d.emp_id;
+
+
+
+
